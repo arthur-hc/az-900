@@ -1,0 +1,151 @@
+RESUMO PARTE 1 CERTIFIÇÃO AZ-900 ALURA
+
+*** Tipos de Serviços
+
+> Gratuitos 12 meses
+  Limitam por um período de tempo
+
+> Sempre gratuitos
+  Não possuem um tempo determinado, contudo, restrigem ferramentas, poder de processamento etc.
+
+- É possível manipular o az dashbord pelo celular também
+
+
+*** Vantagens da nuvem
+> Alta disponibilidade (High Availability)
+  um servidor caiu, outra replica já está atendendo o cliente
+  
+> Escalabilidade (Scalability)
+  De forma rápida e fácil (2 cliques), pode ser expandido verticalmente (maior pode de processamento) ou horizontalmente (maior quantidade de máquinas)
+
+> Agilidade (Agility)
+  De forma rápida e fácil (2 cliques), é possível montar servidores. Sem a nuvem, seria necessário preparar montar o hardware, inserir no racks, configurar, testar aplicação etc.
+
+> Distruição geográfica (Geo-distribuition)
+  Gera eficiência e segurança, auxiliando servidores próximos conforme a necessidade e atendendedo a demanda mais próxima.
+
+> Prevenção de desastres (Disaster recovery)
+  Evita dados serem perdidos em caso de desastres, pois estão distribuídos
+
+- Desvatagem: o elo mais fraco seria o nível/qualidade de acesso a internet
+
+*** Custo mais baixo
+Ao ser bem planejada, dimensionada e implementada, torna o custo mais baixo. Utiliza o conceito >> pague pelo uso <<
+ - Sobe VMs apenas quando necessário
+ - Utiliza somente os storages necessários
+ - Evita adivinhar demanda (necessidades sazonais ou esporádicas ou erros no planejamento inicial)
+
+*** Modelos (Cloud service Models)
+> IaaS (Infrastructure as a Service)
+Não há preocupação com o hardware, essa é uma responsabilidade do provedor.
+
+> PaaS (Plataform as a Service)
+Não há preocupação com o hardware e nem com o S.O. Ex: Utiliza somente o DB
+
+> SaaS (Service as a Service)
+Utiliza apenas o serviço. Apenas insere e utiliza os dados retornados. Ex: Office 365
+
+*** Conceito Serveless (Servesless computing)
+Auto gerenciamento do servidor. Inserimos o código (Node, Python, C etc) na nuvem da azure e ela se encarrega de gerenciar o hardware (quantidade de memória, poder de processamento etc).
+
+*** Tipos de Nuvem (Cloud Types)
+> On premises
+Totalmente local e administrada por nós
+
+> Hybrid Cloud
+Versão mista. Parte utiliza uma nuvem pública e outra parte a nuvem local.
+
+> Off premises (PS: todas as informações são privadas)
+Totalmente pública
+
+*** Azure Global Infrastructure
+Composta por 2 componentes chaves: infraestrutura física e a conectividade via componentes de rede
+
+São mais de 160 datacenters distribuÍdos em >>>REGIÕES<<< e abragem todos os continentes
+
+*** Terminologia das regiões e zonas
+Suas condições abrangem 3 termos:
+
+> Geografia (Geography)
+  Canadá
+
+> Região (Region)
+- Cada região estará pareada com outra região na mesma geografia separadas por no mínimo 500 km de distância para prevenção de desastres. Caso uma região falhe, seu par assumirá as funções
+  Região Toronto
+
+  Região Quebec
+> Zonas de disponibilidade (Availability Zone)
+- São data centers fisicamente separados dentro de uma região da Azure. Para cada região, haverá no mínimo 3 zonas de disponibilidade.
+ Na região Toronto por ex:
+  1 aplicação rodando na 1 zona de disponibilidade
+
+  Caso a primeira falhe, a segunda é capaz de rodar de forma totalmente independete
+
+
+*** Azure Marketplace
+Gama de produtos (aplicações) oferecidos para rodar no ambiente Azure. Ex: Ubuntu Server, Windows Server, WordPress, WordPress no Linux etc. 
+
+*** Azure princing
+> Preço por produto (princing by product)
+Preço normal de cada produto e formas de consumo
+
+> Calculadora de Preço (Princing calculator)
+Ao montar a cesta de produto, dá o custo ou sua estimativa 
+
+> Calculadora TCO (TCO calculator)
+Calcula e mostra o comparativo de custo com um servidor On premises
+
+*** Pago pelo uso (pay-as-you-go)
+Pague o quanto foi utilizado.
+
+- Atenção para VMs
+*** VMs - Payment options
+> Pay as you go
+Utilizadas conforme a demanda
+
+> Reserved Virtual Machines Instances
+São mais baratas do que as sob demanda. Então caso seja uma demanda prevista, são mais vantajosas em relação as VMs sob demanda
+
+> Spot Princing
+Permite utilizar capacidade ociosa das VMs, sendo muito mais baratas. Contudo, podem ser interrompidas. Por isso, são indicadas para desenvolvimento e testes. Sua precificação também é pay-as-you-go.
+
+*** Subscription (*** )
+Assinatura que funciona como um container lógico e onde estarão contidos os recursos da aplicação.
+Uma conta pode  ter múltiplas assinaturas
+
+*** Resource Group (***Mantém recursos***)
+- Contudo, os recursos da aplicação não são inseridos diretamente na Subscription. 
+> Eles são inseridos no Resource Groups (outro container) que estarão na Subscription.
+
+Geralmente estarão dividos por ciclo de vida e resource group, facilitando deploy, updates e deletes.
+
+*** Azure Cost Management
+Estrutura de organização e monitoramento dos custos, disponível para todos os clientes.
+
+> Billing Account
+  Responsável pela conta (Account administrator) e cobranças
+
+> Subscription
+  Grupo de recursos (Azure resource)
+
+
+*** Support (não importante)
+  - Basic
+  - Developer
+  - Standard
+  - Profissional Direct
+
+*** CLI commands
+Azure possui sua CLI e seus comendas começam com az
+
+az
+az login
+az artifacts
+az account
+...
+
+> Cloud Shell
+Shell utilizado diretamente servidor. Além dela é possível instalar a CLI local também.
+
+
+
