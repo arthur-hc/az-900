@@ -151,3 +151,36 @@ Shell utilizado diretamente servidor. Além dela é possível instalar a CLI loc
 
 
 ********* RESUMO PARTE 2 CERTIFIÇÃO AZ-900 ALURA *********
+
+*** Compute Services
+Guarda chuva com diversas tecnlogias relacionadas ao provimento de computação
+
+> Azure Virtual Machine
+
+> Azure App Service
+Serviço p/ provisionar web sem responsabilidade em infraestrutura
+
+> Azure Container Instances
+Subir e rodar imagens através de containers na azure sem orquestração
+
+> Azure Kurbernetes Service
+Serviço de orquestração
+
+> Windows Virtual Desktop
+Provisiona estações windows remotamente
+
+> Azure Functions
+Representam a ideia de Serveless, sendo serviços onde o deploy é realizado e a azure se encarrega pela infraestrutura
+
+*** Virtual Machines
+Máquinas virtuais são emulações de software de computudores físicos. Sua infraestrutura (IaaS - Infrastructure as a service) pode ser usada de diversas formas.
+
+*** Sizes for VM
+Categorizações de tipos de VM
+> General purpose (uso geral)
+> Compute optimized (focadas em processamento)
+> Memory optimized (focadas em memória)
+> Storage optimized (focadas em armazenamento)
+> GPU (focadas em elementos gráficos)
+> High performance compute (computação de alta performance)
+
