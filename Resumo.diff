@@ -184,3 +184,13 @@ Categorizações de tipos de VM
 > GPU (focadas em elementos gráficos)
 > High performance compute (computação de alta performance)
 
+*** VMs scales sets
+Cria e gerencia um número de máquinas vitrtuais que permite o escalonamento conformforme a demanda ou programação. Ex: Black Friday
+
+*** App Services
+Permite que coloque aplicações web (HTTP) e ele se encarrega por toda a infraestrutura.
+- PaaS
+- Pode ser utilizado para hospedar web apps
+- Permite utilizar containers
+- Permite hospedar o backend da api
+
