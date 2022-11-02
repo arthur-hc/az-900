@@ -213,3 +213,9 @@ Permite prover através da nuvem da azure estações de trabalho:
 A base dela são as máquinas virtuais e em cima dessas máquinas virtuais você prove imagens de estações Microsoft, sendo acessado via remote desktop ou estação que não tenha necessariamente um Windows instalado.
 !!! Questão de prova: "Como prover rapidamente estações de trabalho?" R: Windows
 
+*** Azure Functions
+Solução Serveless, onde o usuário se responsabiliza pelo código e a azure pela mínima infraestrutura.
+
+*** Azure Functions Triggers
+São os gatilhos para executar uma function
+
