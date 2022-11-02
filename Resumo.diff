@@ -219,3 +219,35 @@ Solução Serveless, onde o usuário se responsabiliza pelo código e a azure pe
 *** Azure Functions Triggers
 São os gatilhos para executar uma function
 
+*** Networking (Serviços de rede)
+> Virtual Networking (VNet)
+Serviço virtual
+- Base para criação de uma rede privada dentro da Azure. A VNet habilita recursos, dentre eles a que permite comunicação entre as VMs.
+
+- VNet concepts
+    - Addresss space (espaço de endereçamento) => Atribuição dos IPS dentro de uma rede
+    - Subnets => Redes dentro de uma Vnet
+    - Regions => Permite redes independentes por região
+    - Subscription => Dentro de uma assinatura, permite diversas redes
+
+> Load Balancer
+
+> VPN Gateway
+  Permite conectar diretamente na azure através de uma VPN, extendendo a LAN para nuvem
+
+> Application Gateway
+Recebe e direciona tráfego
+
+> ExpressRoute
+Permite conectar um On-Premise com a nuvem através de um link dedicado.
+
+> Content Delivery Networking (CDN)
+Aumenta a performance
+
+- Ao criarmos uma Vnet precisamos considerar a reserva de endereços feita de forma automática pelo serviço. São reservados:
+x. x. x. 0: endereço de rede
+x. x. x. 1: reservado pelo Azure para o gateway padrão
+x. x. x. 2, x. x. 3: reservado pelo Azure para mapear os IPs de DNS do Azure para o espaço da VNet
+x. x. x. 255: endereço de difusão de rede
+
+- Por default, a conectividade de Vms dentro de uma Vnet é permitida
