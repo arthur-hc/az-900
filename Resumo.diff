@@ -1,5 +1,4 @@
-RESUMO PARTE 1 CERTIFIÇÃO AZ-900 ALURA
-
+********* RESUMO PARTE 1 CERTIFIÇÃO AZ-900 ALURA *********
 *** Tipos de Serviços
 
 > Gratuitos 12 meses
@@ -149,3 +148,106 @@ Shell utilizado diretamente servidor. Além dela é possível instalar a CLI loc
 
 
 
+
+
+********* RESUMO PARTE 2 CERTIFIÇÃO AZ-900 ALURA *********
+
+*** Compute Services
+Guarda chuva com diversas tecnlogias relacionadas ao provimento de computação
+
+> Azure Virtual Machine
+
+> Azure App Service
+Serviço p/ provisionar web sem responsabilidade em infraestrutura
+
+> Azure Container Instances
+Subir e rodar imagens através de containers na azure sem orquestração
+
+> Azure Kurbernetes Service
+Serviço de orquestração
+
+> Windows Virtual Desktop
+Provisiona estações windows remotamente
+
+> Azure Functions
+Representam a ideia de Serveless, sendo serviços onde o deploy é realizado e a azure se encarrega pela infraestrutura
+
+*** Virtual Machines
+Máquinas virtuais são emulações de software de computudores físicos. Sua infraestrutura (IaaS - Infrastructure as a service) pode ser usada de diversas formas.
+
+*** Sizes for VM
+Categorizações de tipos de VM
+> General purpose (uso geral)
+> Compute optimized (focadas em processamento)
+> Memory optimized (focadas em memória)
+> Storage optimized (focadas em armazenamento)
+> GPU (focadas em elementos gráficos)
+> High performance compute (computação de alta performance)
+
+*** VMs scales sets
+Cria e gerencia um número de máquinas vitrtuais que permite o escalonamento conformforme a demanda ou programação. Ex: Black Friday
+
+*** App Services
+Permite que coloque aplicações web (HTTP) e ele se encarrega por toda a infraestrutura.
+- PaaS
+- Pode ser utilizado para hospedar web apps
+- Permite utilizar containers
+- Permite hospedar o backend da api
+
+*** Azure Container Instances
+Serve todo serviço necessário para rodar o container, cuidando desde infra até a criação do container. O usuário ficará responsável pela imagem e envio. 
+> SEM ORQUESTRAÇÃO (PARA ISSO, UTILIZE KUBERNETES)
+
+*** Azure Kurbernetes Service
+Serviço de orquestração de containers. O serviço cuidará de questões de escalabilidade, performance e orquestramento do cluster. Já o usuário administra os nós, ou seja, as imagens que estão dentro do cluster.
+> O serviço em sí, é gratuito
+  Contudo, a cobrança ocorre em relação ao poder computacional utilizado. Para criar um cluster, são necessárias máquinas, gerando custos.
+
+*** Windows Virtual Desktop
+Permite prover através da nuvem da azure estações de trabalho:
+> Windows 10
+> Windows  7
+> Windows Server
+> Apps do MS 365
+
+A base dela são as máquinas virtuais e em cima dessas máquinas virtuais você prove imagens de estações Microsoft, sendo acessado via remote desktop ou estação que não tenha necessariamente um Windows instalado.
+!!! Questão de prova: "Como prover rapidamente estações de trabalho?" R: Windows
+
+*** Azure Functions
+Solução Serveless, onde o usuário se responsabiliza pelo código e a azure pela mínima infraestrutura.
+
+*** Azure Functions Triggers
+São os gatilhos para executar uma function
+
+*** Networking (Serviços de rede)
+> Virtual Networking (VNet)
+Serviço virtual
+- Base para criação de uma rede privada dentro da Azure. A VNet habilita recursos, dentre eles a que permite comunicação entre as VMs.
+
+- VNet concepts
+    - Addresss space (espaço de endereçamento) => Atribuição dos IPS dentro de uma rede
+    - Subnets => Redes dentro de uma Vnet
+    - Regions => Permite redes independentes por região
+    - Subscription => Dentro de uma assinatura, permite diversas redes
+
+> Load Balancer
+
+> VPN Gateway
+  Permite conectar diretamente na azure através de uma VPN, extendendo a LAN para nuvem
+
+> Application Gateway
+Recebe e direciona tráfego
+
+> ExpressRoute
+Permite conectar um On-Premise com a nuvem através de um link dedicado.
+
+> Content Delivery Networking (CDN)
+Aumenta a performance
+
+- Ao criarmos uma Vnet precisamos considerar a reserva de endereços feita de forma automática pelo serviço. São reservados:
+x. x. x. 0: endereço de rede
+x. x. x. 1: reservado pelo Azure para o gateway padrão
+x. x. x. 2, x. x. 3: reservado pelo Azure para mapear os IPs de DNS do Azure para o espaço da VNet
+x. x. x. 255: endereço de difusão de rede
+
+- Por default, a conectividade de Vms dentro de uma Vnet é permitida
