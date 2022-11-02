@@ -194,3 +194,22 @@ Permite que coloque aplicações web (HTTP) e ele se encarrega por toda a infrae
 - Permite utilizar containers
 - Permite hospedar o backend da api
 
+*** Azure Container Instances
+Serve todo serviço necessário para rodar o container, cuidando desde infra até a criação do container. O usuário ficará responsável pela imagem e envio. 
+> SEM ORQUESTRAÇÃO (PARA ISSO, UTILIZE KUBERNETES)
+
+*** Azure Kurbernetes Service
+Serviço de orquestração de containers. O serviço cuidará de questões de escalabilidade, performance e orquestramento do cluster. Já o usuário administra os nós, ou seja, as imagens que estão dentro do cluster.
+> O serviço em sí, é gratuito
+  Contudo, a cobrança ocorre em relação ao poder computacional utilizado. Para criar um cluster, são necessárias máquinas, gerando custos.
+
+*** Windows Virtual Desktop
+Permite prover através da nuvem da azure estações de trabalho:
+> Windows 10
+> Windows  7
+> Windows Server
+> Apps do MS 365
+
+A base dela são as máquinas virtuais e em cima dessas máquinas virtuais você prove imagens de estações Microsoft, sendo acessado via remote desktop ou estação que não tenha necessariamente um Windows instalado.
+!!! Questão de prova: "Como prover rapidamente estações de trabalho?" R: Windows
+
