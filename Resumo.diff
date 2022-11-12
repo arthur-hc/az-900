@@ -363,3 +363,38 @@ Para isso utiliza o Data Migration Assistant (DMA)
 
 > Data Migration Assistant (DMA)
 Faz validação de tipos de dados, schemas etc para garantir a integridade da migração.
+
+
+*** Azure Solutions
+Os serviços da azure podem ser dividos em 3 grandes grupos:
+> Internet of Things (IoT)
+Combinação de serviços (VMs, Databases etc) que podem atender demandas de internet das coisas. Tem a proposta de permitir centralizar, monitorar, e gerenciar aplicações desse grupo.
+
+- IoT Central
+***IaaS***
+  Serve para desenvolver, gerenciar e manter soluções de IoT empresariais. Ex: monitoramento de temperatura de máquinas de uma industria.
+
+- Hub IoT
+Pode receber informações de diferentes lugares, processá-las, concatená-las etc.
+***PaaS***
+  - Recebe dados de diversos lugares e tipos
+  - Processa
+  - Permite aplicação de Azure Functions
+  - Permite aplicação de Machine Learning
+  - Pode ser um input para uma plataforma de BI
+
+> Big Data
+- Azure Data Lake Analytics
+Platorma que permite analisar cargas de tralharo, transformando dados em informações através de queries.
+
+- Machine Learning
+  MLOps (Machine Learning Operations) => Permite desenhar, desenvolver e treinar modelos.
+  Cognitive Services(ready template) => Serviços pré prontos (Ex: detecção de imagens, converte voz para texto etc.)
+  Bot Services
+
+> DevOps
+Azure Boards
+Azure Pipelines
+Azure Repos
+Azure test Plans
+Azure Artifacts
