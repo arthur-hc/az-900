@@ -251,3 +251,150 @@ x. x. x. 2, x. x. 3: reservado pelo Azure para mapear os IPs de DNS do Azure par
 x. x. x. 255: endereço de difusão de rede
 
 - Por default, a conectividade de Vms dentro de uma Vnet é permitida
+
+
+
+
+
+********* RESUMO PARTE 3 CERTIFIÇÃO AZ-900 ALURA *********
+
+*** Storage
+> Blob Storage (Binary Large Object)
+Permite o armazenamento de arquivos comuns (imagens, arquivos de log, vídeos etc) dentro de um container.
+
+> Azure Management Disk
+Permite adicionar outro disco, além do disco virtual automáticamente adicionado ao cria as VMs.
+
+Tipos:
+- ultra disks
+- premium solid-state drives (SSD)
+- standard SSDs
+- standadr hard disk drives (HDD)
+
+> Azure File
+Serviço de file share que permite montar um servidor de compartilhamento
+
+- Server Message Block (SMB) protocol para Windows
+- Network File System (NFS) protocol para	Linux
+
+> Archieve
+Permite o armazenamento de longo período para preservar os dados.
+PS: Terá uma precificação diferente.
+
+*** Storage account
+Conta focada ao serviço de compartilhamento que fica dentro do guarda-chuva de serviços.
+
+As redundâncias podem variar de acordo com a região.
+
+*** Azure Storage redundancy
+> Locally-redundant storage - LRS
+No data center, cria 3 cópias em disco físicos. Se um falhar, haverá outras 2 de cobertura. É um serviço mais barato e seu gerenciamento.
+
+Vantagens => Custo
+Desvatagem => Risco por estar apenas em um data center
+
+> Zone-redundant storage - ZRS
+Terá 3 cópias em 3 zonas e data centers diferentes.
+
+Vantagens => O risco não fica concentrado em um data center
+Desvatagem => Risco por estar apenas em uma região
+
+> Geo-redundant storage
+Distruição por região, replicando para outras através de LSR
+
+> Geo-zone-redundant storage
+Distruição por zona, com uma cópia em cada zona (ZRS) e seu backup é em uma outra região (LRS)
+
+> Read-Access
+
+*** Access- tiers - Storage
+Tipos e velocidade de armazenamento
+
+> Hot
+Para dados com frequente acesso. Mais caro
+
+> Cool
+Para dados não tão acessados, arquivados com mais de 30 dias. Preço médio
+
+> Archive
+Para dados pouco acessados, arquivados com mais de 180 dias. Mais barato, contudo seu tempo de recuperação é maior, sendo assim, se mal utilizado, pode sair mais caro
+
+
+*** Databases
+> Cosmos DB
+  - Banco de dados totalmente gerenciavel NoSQL
+  - Rápido tempo de resposta e acesso
+  - platarform-as-a-service (PaaS)
+  - Multi região, ou seja, é possível ter várias replicas espalhadas
+  - Distribuição global
+
+> Azure SQL
+- Azure SQL Databases
+  DB totalmente gerenciavel pela Azure. A única responsabilidade é a manipulação dos dados (inserção, updates, deletes etc)
+
+- Azure SQL Managed Instance
+  É auto gerenciavel, mas não totalmente. Ficará rodando dentro de uma instância. ***Indicado para migrações***
+
+- SQL Server on Azure VMs
+  É uma instância, não auto gerenciavel, que rodará dentro de uma VMs com um SQL server instalado.
+  ***Indicado quando há necessidade de acesso ao sistema operacional***
+
+> MySQL
+
+> PostgreeSQL
+Banco de dados relacional baseado na versão de comunidade.
+
+Possuirá 3 formatos de deploy:
+- Single Server
+Mais simples
+
+- Flexible Server (Preview)
+Versão flexivel, mas ainda em testes na data do curso
+
+- Hyperscale (Citus)
+Versão para grande demanda
+
+> Database Migration Services (DMS)
+Serviço que auxilia na migração de aplicações com múltiplos databases para a Azure com o mínimo tempo possível. É recomendado principalmente para ambientes de produção.
+
+On premises => Cloud
+
+Para isso utiliza o Data Migration Assistant (DMA)
+
+> Data Migration Assistant (DMA)
+Faz validação de tipos de dados, schemas etc para garantir a integridade da migração.
+
+
+*** Azure Solutions
+Os serviços da azure podem ser dividos em 3 grandes grupos:
+> Internet of Things (IoT)
+Combinação de serviços (VMs, Databases etc) que podem atender demandas de internet das coisas. Tem a proposta de permitir centralizar, monitorar, e gerenciar aplicações desse grupo.
+
+- IoT Central
+***IaaS***
+  Serve para desenvolver, gerenciar e manter soluções de IoT empresariais. Ex: monitoramento de temperatura de máquinas de uma industria.
+
+- Hub IoT
+Pode receber informações de diferentes lugares, processá-las, concatená-las etc.
+***PaaS***
+  - Recebe dados de diversos lugares e tipos
+  - Processa
+  - Permite aplicação de Azure Functions
+  - Permite aplicação de Machine Learning
+  - Pode ser um input para uma plataforma de BI
+
+> Big Data
+- Azure Data Lake Analytics
+Platorma que permite analisar cargas de tralharo, transformando dados em informações através de queries.
+
+- Machine Learning
+  MLOps (Machine Learning Operations) => Permite desenhar, desenvolver e treinar modelos.
+  Cognitive Services(ready template) => Serviços pré prontos (Ex: detecção de imagens, converte voz para texto etc.)
+  Bot Services
+
+> DevOps
+Azure Boards
+Azure Pipelines
+Azure Repos
+Azure test Plans
+Azure Artifacts
