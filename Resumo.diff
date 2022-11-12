@@ -306,3 +306,15 @@ Distruição por região, replicando para outras através de LSR
 Distruição por zona, com uma cópia em cada zona (ZRS) e seu backup é em uma outra região (LRS)
 
 > Read-Access
+
+*** Access- tiers - Storage
+Tipos e velocidade de armazenamento
+
+> Hot
+Para dados com frequente acesso. Mais caro
+
+> Cool
+Para dados não tão acessados, arquivados com mais de 30 dias. Preço médio
+
+> Archive
+Para dados pouco acessados, arquivados com mais de 180 dias. Mais barato, contudo seu tempo de recuperação é maior, sendo assim, se mal utilizado, pode sair mais caro
