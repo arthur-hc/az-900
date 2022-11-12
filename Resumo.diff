@@ -329,9 +329,37 @@ Para dados pouco acessados, arquivados com mais de 180 dias. Mais barato, contud
   - Distribuição global
 
 > Azure SQL
+- Azure SQL Databases
+  DB totalmente gerenciavel pela Azure. A única responsabilidade é a manipulação dos dados (inserção, updates, deletes etc)
+
+- Azure SQL Managed Instance
+  É auto gerenciavel, mas não totalmente. Ficará rodando dentro de uma instância. ***Indicado para migrações***
+
+- SQL Server on Azure VMs
+  É uma instância, não auto gerenciavel, que rodará dentro de uma VMs com um SQL server instalado.
+  ***Indicado quando há necessidade de acesso ao sistema operacional***
 
 > MySQL
 
 > PostgreeSQL
+Banco de dados relacional baseado na versão de comunidade.
 
-> Database Migration Services
+Possuirá 3 formatos de deploy:
+- Single Server
+Mais simples
+
+- Flexible Server (Preview)
+Versão flexivel, mas ainda em testes na data do curso
+
+- Hyperscale (Citus)
+Versão para grande demanda
+
+> Database Migration Services (DMS)
+Serviço que auxilia na migração de aplicações com múltiplos databases para a Azure com o mínimo tempo possível. É recomendado principalmente para ambientes de produção.
+
+On premises => Cloud
+
+Para isso utiliza o Data Migration Assistant (DMA)
+
+> Data Migration Assistant (DMA)
+Faz validação de tipos de dados, schemas etc para garantir a integridade da migração.
