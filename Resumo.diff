@@ -251,3 +251,58 @@ x. x. x. 2, x. x. 3: reservado pelo Azure para mapear os IPs de DNS do Azure par
 x. x. x. 255: endereço de difusão de rede
 
 - Por default, a conectividade de Vms dentro de uma Vnet é permitida
+
+
+
+
+
+********* RESUMO PARTE 3 CERTIFIÇÃO AZ-900 ALURA *********
+
+*** Storage
+> Blob Storage (Binary Large Object)
+Permite o armazenamento de arquivos comuns (imagens, arquivos de log, vídeos etc) dentro de um container.
+
+> Azure Management Disk
+Permite adicionar outro disco, além do disco virtual automáticamente adicionado ao cria as VMs.
+
+Tipos:
+- ultra disks
+- premium solid-state drives (SSD)
+- standard SSDs
+- standadr hard disk drives (HDD)
+
+> Azure File
+Serviço de file share que permite montar um servidor de compartilhamento
+
+- Server Message Block (SMB) protocol para Windows
+- Network File System (NFS) protocol para	Linux
+
+> Archieve
+Permite o armazenamento de longo período para preservar os dados.
+PS: Terá uma precificação diferente.
+
+*** Storage account
+Conta focada ao serviço de compartilhamento que fica dentro do guarda-chuva de serviços.
+
+As redundâncias podem variar de acordo com a região.
+
+*** Azure Storage redundancy
+> Locally-redundant storage - LRS
+No data center, cria 3 cópias em disco físicos. Se um falhar, haverá outras 2 de cobertura. É um serviço mais barato e seu gerenciamento.
+
+Vantagens => Custo
+Desvatagem => Risco por estar apenas em um data center
+
+> Zone-redundant storage - ZRS
+Terá 3 cópias em 3 zonas e data centers diferentes.
+
+Vantagens => O risco não fica concentrado em um data center
+Desvatagem => Risco por estar apenas em uma região
+
+> Geo-redundant storage
+Distruição por região, replicando para outras através de LSR
+
+> Geo-zone-redundant storage
+Distruição por zona, com uma cópia em cada zona (ZRS) e seu backup é em uma outra região (LRS)
+
+> Read-Access
