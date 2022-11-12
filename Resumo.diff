@@ -318,3 +318,20 @@ Para dados não tão acessados, arquivados com mais de 30 dias. Preço médio
 
 > Archive
 Para dados pouco acessados, arquivados com mais de 180 dias. Mais barato, contudo seu tempo de recuperação é maior, sendo assim, se mal utilizado, pode sair mais caro
+
+
+*** Databases
+> Cosmos DB
+  - Banco de dados totalmente gerenciavel NoSQL
+  - Rápido tempo de resposta e acesso
+  - platarform-as-a-service (PaaS)
+  - Multi região, ou seja, é possível ter várias replicas espalhadas
+  - Distribuição global
+
+> Azure SQL
+
+> MySQL
+
+> PostgreeSQL
+
+> Database Migration Services
