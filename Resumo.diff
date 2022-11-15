@@ -488,7 +488,14 @@ Permite criar regras e reforça para que sejam seguidas
 Faz parte do gerenciamento de permissões e acessos aos usuários.
 
 > Azure Monitor
+Centraliza informações e permite monitorar logs, memórias, disco etc
+  - Detecta problemas de apps
+  - Analisar logs
+  - Criar visualizações
+  - Coletar dados de monitorações
 
 > Azure Health
+Serviço gratuito de informações da Azure. Caso exista algum problema na região buscada, será listada. Também é possível criar alertas para equipe.
 
 > Complience
+No site da azure tem a lista de todas as ISOs
