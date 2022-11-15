@@ -467,3 +467,28 @@ Serve para a segurança da informação e gerenciamento dos eventos. Ex: 3 tenta
 
 > Azure Dedicated Hosts
 Máquina exclusiva.
+
+*** Identity Services / Complience
+
+> Azure Active Directory
+- !!! Active Directory !== Azure Active Directory
+
+Serviço de gestão de usuários PARA A NUVEM e On Premises.
+
+> Single Sign-On
+Usuário e senha únicos que permite fazer o login em diversos serviços.
+
+> Azure AD Multi-Factor Authentication
+Permite exigir do usuário a exigência o multi fator de autenticação
+
+> Azure Policy
+Permite criar regras e reforça para que sejam seguidas
+
+> Azure role-based access controle (RBAC)
+Faz parte do gerenciamento de permissões e acessos aos usuários.
+
+> Azure Monitor
+
+> Azure Health
+
+> Complience
