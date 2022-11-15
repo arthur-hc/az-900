@@ -398,3 +398,40 @@ Azure Pipelines
 Azure Repos
 Azure test Plans
 Azure Artifacts
+
+
+
+********* RESUMO PARTE 4 CERTIFIÇÃO AZ-900 ALURA *********
+
+*** Security
+> Denfence in Depth
+  "Defesa em camadas" que busca preservar a informação. Serão vários mecanismos que buscam impedir ou retardar o avanço.
+
+  Possui 3 pilares:
+  - Confidentiality
+  - Integrity
+  - Availability
+
+> Secureity Azure Firewall
+  Além de proteger informações internas, também segrega o tráfego de acesso ao on premise no local.
+
+> Network Security Groups (NSG)
+  Seria um "Firewall Interno" atrelado ao recurso. Ao criar uma máquina virtual, é possível granular os níveis de acesso. Sendo assim, entende-se que Firewall e NSG são complementares, o primeiro estará mais focado na rede, já o segundo estará mais focado em filtrar o que chegará na VM.
+
+-  Por default Firewall: e NSG permitem acesso full com a origem na própria VNet.
+
+> Azure DDoS Protection
+
+> Azure Defender
+
+> Azure Security Center
+
+> Azure key Vault
+
+> Azure Information Protection
+
+> Advanced Threat Protection
+
+> Azure Sentinel
+
+> Azure Dedicated Hosts
