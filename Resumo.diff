@@ -421,17 +421,49 @@ Azure Artifacts
 -  Por default Firewall: e NSG permitem acesso full com a origem na própria VNet.
 
 > Azure DDoS Protection
+Serviço de proteção de ataque DDoS (muitas requisições). Ela utiliza o próprio serviço da Azure(é muito mais robusto)
+
+Opções:
+- Basic:
+Gratuito, já vem como padrão em VMs
+
+- Standard:
+Caso precise monitorar e detalhar, deve ser contratado e instalado.
 
 > Azure Defender
+Proteção e monitoramento ao banco de dados, máquinas virtuais, container, aplicações web etc. Ficará procurando por vulnerabilidade, falta de patch e caso exista, notificará.
 
 > Azure Security Center
+Central de segurança do dashbords mapeando pontos importantes do ambiente de segurança. Disponibiliza relatórios e pontos de melhoria.
+
+- Score => Pontuação de segurança do ambiente
+- Complience => Questões normativas
+- Azure Defender
+- Inventory => Monstra Vms não monitoradas e pontos de atenção
 
 > Azure key Vault
+"Cofre digital"
+Pode armazenar:
+  - Senhas
+  - Chaves
+  - Certificados
 
-> Azure Information Protection
+Opções:
+
+- Standard:
+"Cofre digital", serviço via software:
+
+- Premium: 
+Módulo fisico para fazer a proteção (HSM)
+
+> Azure Information Protection (AIP)
+Serviço para classificação das informações e documentos (é sensível ou não, etc)
 
 > Advanced Threat Protection
+Está integrado no Active Directory e verificará tentativas de login
 
 > Azure Sentinel
+Serve para a segurança da informação e gerenciamento dos eventos. Ex: 3 tentativas inválidas de login, bloqueará o usuário.
 
 > Azure Dedicated Hosts
+Máquina exclusiva.
