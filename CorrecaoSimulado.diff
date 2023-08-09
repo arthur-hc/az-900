@@ -1,0 +1,44 @@
+> 1 - Um engenheiro de TI precisa criar uma máquina virtual no Azure. Atualmente, ele tem uma estação de trabalho baseada no sistema operacional Android. Qual das opções a seguir o engenheiro de TI pode usar para criar a máquina virtual desejada no Azure?
+- Azure Cloud Shell
+
+> 2 - Uma empresa está planejando configurar uma conta gratuita do Azure. O plano de Suporte Standard vem junto com a Conta Gratuita do Azure?
+- Não
+
+> 3 - Uma empresa precisa armazenar 2 TB de dados que não são usados com frequência. Os dados precisam ser acessados via Power BI. Qual dos seguintes poderia ser usado como uma camada de dados econômica para este
+- Azure Data Lake
+R: É a melhor opção quando o uso NÃO é frequente
+
+> 4 - Qual das opções a seguir é uma solução de Software como Serviço (SaaS)?
+- Microsoft Office 365
+R: É considerado um software como serviço, pois a única preocupação é utilizá-lo
+
+> 5 - Para que são usadas as políticas de segurança no Azure?
+- Um conjunto de regras que o Azure pode usar para avaliar se a configuração de um serviço é segura e está em conformidade com as diretrizes de segurança da sua organização.
+R: As outras opções fazem parte da política, mas esta opção descrever o conjunto
+
+> 6 - Uma empresa está planejando criar várias máquinas virtuais no Azure. Qual das opções a seguir é a categoria correta à qual a Máquina Virtual do Azure pertence?
+- Infrastructure as a service (IaaS)
+R: Pois será utilizado a infraestrutura para rodar a VM, a partir disso, ficará sobre a nossa responsabilidade o gerenciamento da máquina
+
+> 7 - Você precisa proteger e-mails, documentos e dados importantes que serão compartilhados fora da sua empresa. Qual serviço do Azure você deve usar?
+- Azure Information Protection
+
+> 8 - Uma empresa precisa criar cerca de 50 máquinas virtuais customizadas. Destes, 20 são máquinas virtuais baseadas em Windows e 30 são máquinas Ubuntu. Qual das opções a seguir ajudaria a reduzir o esforço administrativo necessário para implantar as máquinas?
+- Azure ScaleSets
+R: Será necessário a utilização de uma imagem (ou um template) para cria várias máquinas do mesmo tipo. O ScaleSets permite o escalonamento, que pode ser feito de forma automática ou manual, sendo assim, de início, é possível setar as 50 máquinas iniciais.
+
+> 9 - Qual das seguintes opções é verdadeira quando se trata de SaaS (Software como serviço)?
+- Você é responsável por configurar a solução
+R: Você apenas configura a solução e utiliza
+
+> 10 - Uma empresa está planejando configurar uma solução no Azure. A solução teria o seguinte requisito chave: Uma solução de integração para a implantação de código Qual das opções a seguir seria mais adequada para esse requisito?
+- Azure Devops
+R: Dentro do Azure Devops há a opção de Pipelines que é utilizada para deploy e implementação de códigos
+
+> 11 - Sua empresa precisa implementar uma solução de BD com os seguintes pré-requisitos: Capacidade de armazenar documentos JSON; Acesso de baixa latência de diferentes regiões geográficas. Quais das seguintes soluções de dados você consideraria para este requisito?
+- Azure CosmosDB
+R: Por ser em formato JSON e com baixa latência, Azure CosmosDB é a melhor opção
+
+> 12 - Qual dos seguintes componentes pode ser usado para balancear a carga do tráfego para aplicativos Web, como aplicativos Web do Serviço de Aplicativo do Azure usando a camada 7 do modelo OSI?
+- Application Gateway
+R: O Application Gateway faz o balanceamento de carga na camada 7. O Load Balancer é alternativa errada, pois faz o balanceamento na camada 4
