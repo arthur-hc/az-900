@@ -42,3 +42,26 @@ R: Por ser em formato JSON e com baixa latência, Azure CosmosDB é a melhor op�
 > 12 - Qual dos seguintes componentes pode ser usado para balancear a carga do tráfego para aplicativos Web, como aplicativos Web do Serviço de Aplicativo do Azure usando a camada 7 do modelo OSI?
 - Application Gateway
 R: O Application Gateway faz o balanceamento de carga na camada 7. O Load Balancer é alternativa errada, pois faz o balanceamento na camada 4
+
+> 13 - Uma empresa precisa implantar 10 recursos do Azure em vários departamentos. Todos os tipos de recursos e configurações são exatamente os mesmos. Qual das opções a seguir pode ser usada para automatizar a implantação de recursos usando infraestrutura como código?
+- Azure Resource Manager templates
+R: A Azure Resource Manager templates fornece templates. A Virtual machine scale sets não é a correta, pois não necessariamente há a especificação de utilização de VMS.
+
+> 14 - Uma empresa criou um grupo de recursos e deseja garantir que os recursos dentro do grupo de recursos não sejam excluídos acidentalmente.Qual dos seguintes você usaria para este propósito?
+- Locks
+R: O Locks permite travar o recurso. Policy está muito mais no nível organizacional e Access Control é mais vinculado ao acesso do que sobre restrições de ações
+
+> 15 - Uma empresa deseja adquirir um plano de suporte do Azure que oferece:Suporte para software de terceiros com interoperabilidade e orientação de configuração e solução de problemas. Qual dos planos de suporte deve ser adquirido considerando o menor custo?
+- Developer
+R: Com exceção do Basic, todos tem suporte, contudo, o developer é o mais barato.
+
+> 16 - Uma empresa deseja hospedar um aplicativo de missão crítica em um conjunto de máquinas virtuais no Azure. Eles querem garantir a maior disponibilidade possível. Qual das opções a seguir você pode usar no Azure para atender a esse requisito? (Escolha 2)
+- Availability Zones e Availability Sets
+R: Resource Groups serve apenas para organizar um grupo de recursos. Zona de disponbilidade garante a disponbilidade da aplicação, portanto, correta. Availability Sets permite o escalonamento de máquinas verticalmente e atende ao requisito. Resource Tags, serve para organizar o serviço, apenas marcando o serviço como por exemplo "prod". Essa marcação não gera impacto nenhum no serviço
+
+> 17 - Uma empresa está planejando hospedar um aplicativo em um conjunto de máquinas virtuais no Azure. Eles querem garantir que o aplicativo sobreviva a uma falha em toda a região no Azure. Qual dos seguintes conceitos precisa ser considerado para atender a esse requisito?
+- Disaster Recovery
+
+> 18 - Uma empresa está planejando uma estrutura na qual utiliza seu próprio ambiente em conjunto com a nuvem Azure conectada por meio de uma VPN site-to-site. A que modelo se refere esta infraestrutura?
+- Hybrid Cloud
+R: Private Cloud, tudo on-premise, portanto, não atende. Public Cloud, não serve, pois irá utilizar parte on-premise. Governament Cloud é um serviço disponibilizado apenas para agências governamentais. Sendo assim, a alternativa correta é a Hybrid Cloud.
