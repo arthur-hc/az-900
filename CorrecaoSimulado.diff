@@ -65,3 +65,25 @@ R: Resource Groups serve apenas para organizar um grupo de recursos. Zona de dis
 > 18 - Uma empresa está planejando uma estrutura na qual utiliza seu próprio ambiente em conjunto com a nuvem Azure conectada por meio de uma VPN site-to-site. A que modelo se refere esta infraestrutura?
 - Hybrid Cloud
 R: Private Cloud, tudo on-premise, portanto, não atende. Public Cloud, não serve, pois irá utilizar parte on-premise. Governament Cloud é um serviço disponibilizado apenas para agências governamentais. Sendo assim, a alternativa correta é a Hybrid Cloud.
+
+> 19 - Uma empresa deseja criar vários armazenamentos de dados no Azure. Eles querem ter camadas de armazenamento que possam ser usadas para armazenar dados pouco usados. Qual dos seguintes níveis de armazenamento para armazenamento Azure BLOB seria adequado para este tipo de requisito?
+- Cool Storage e Archive storage
+
+> 20 - Uma empresa deseja hospedar seus aplicativos no Azure usando componentes sem servidor. Eles não querem gerenciar a infraestrutura subjacente do aplicativo. Qual das seguintes opções pode ser usada para hospedar este código?
+- Azure Function
+R: Por armazenar código, Azure Logic Apps não se enquadra, portanto, Azure Function
+
+> 21 - Como a autorização é diferente da autenticação?
+- Autenticação é verificar se você é quem diz ser. A autorização está concedendo acesso a recursos, seções, aplicativos e muito mais, depois de autenticado.
+
+> 22 - Uma empresa está planejando hospedar recursos no Azure. Eles querem garantir que o Azure esteja em conformidade com as regras e regulamentos da região para hospedagem de recursos. Qual das opções a seguir pode ajudar a empresa a obter os relatórios de conformidade necessários?
+- Azure Security Center
+
+> 23 - O que a Azure Information Protection faz?
+- Fornece a capacidade de compartilhar com segurança dados confidenciais com outras pessoas
+R: Guardar chaves e segredos tem relação com o Azure Vault, portanto, incorreta.
+
+> 24 - Uma empresa tem vários recursos hospedados no Azure. Eles querem ter uma solução abrangente para coletar, analisar e atuar na telemetria de sua nuvem. Qual dos seguintes serviços você usaria para este requisito?
+- Azure Monitor
+R: Por envolver telemetria, a opção correta é o Azure Monitor
+
