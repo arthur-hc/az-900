@@ -56,7 +56,8 @@ R: O Locks permite travar o recurso. Policy está muito mais no nível organizac
 R: Com exceção do Basic, todos tem suporte, contudo, o developer é o mais barato.
 
 > 16 - Uma empresa deseja hospedar um aplicativo de missão crítica em um conjunto de máquinas virtuais no Azure. Eles querem garantir a maior disponibilidade possível. Qual das opções a seguir você pode usar no Azure para atender a esse requisito? (Escolha 2)
-- Availability Zones e Availability Sets
+- Availability Zones 
+- Availability Sets
 R: Resource Groups serve apenas para organizar um grupo de recursos. Zona de disponbilidade garante a disponbilidade da aplicação, portanto, correta. Availability Sets permite o escalonamento de máquinas verticalmente e atende ao requisito. Resource Tags, serve para organizar o serviço, apenas marcando o serviço como por exemplo "prod". Essa marcação não gera impacto nenhum no serviço
 
 > 17 - Uma empresa está planejando hospedar um aplicativo em um conjunto de máquinas virtuais no Azure. Eles querem garantir que o aplicativo sobreviva a uma falha em toda a região no Azure. Qual dos seguintes conceitos precisa ser considerado para atender a esse requisito?
@@ -67,7 +68,8 @@ R: Resource Groups serve apenas para organizar um grupo de recursos. Zona de dis
 R: Private Cloud, tudo on-premise, portanto, não atende. Public Cloud, não serve, pois irá utilizar parte on-premise. Governament Cloud é um serviço disponibilizado apenas para agências governamentais. Sendo assim, a alternativa correta é a Hybrid Cloud.
 
 > 19 - Uma empresa deseja criar vários armazenamentos de dados no Azure. Eles querem ter camadas de armazenamento que possam ser usadas para armazenar dados pouco usados. Qual dos seguintes níveis de armazenamento para armazenamento Azure BLOB seria adequado para este tipo de requisito?
-- Cool Storage e Archive storage
+- Cool Storage 
+- Archive storage
 
 > 20 - Uma empresa deseja hospedar seus aplicativos no Azure usando componentes sem servidor. Eles não querem gerenciar a infraestrutura subjacente do aplicativo. Qual das seguintes opções pode ser usada para hospedar este código?
 - Azure Function
@@ -87,3 +89,14 @@ R: Guardar chaves e segredos tem relação com o Azure Vault, portanto, incorret
 - Azure Monitor
 R: Por envolver telemetria, a opção correta é o Azure Monitor
 
+> 25 - Qual das seguintes opções é verdadeira em relação aos Azure Management Groups?
+- O Azure Management Groups permite que você aplique políticas com hierarquias flexíveis a várias assinaturas.
+
+> 26 -  Uma empresa precisa criar um conjunto de recursos no Azure. Eles exigem que os administradores de TI criem recursos apenas em uma determinada região. Qual das opções a seguir pode ajudar a conseguir isso?
+- Azure Polices
+R: A alternativa sobre Azure Resource Groups está incorreta, pois é necessário criar em uma determinada região e nesta alternativa não impede criar em outra região e relacionar a uma VM
+
+> 27 - Quais são os principais componentes de uma configuração do Azure VPN Gateway?
+- O Gateway de VPN deve ser anexado a uma Rede Virtual do Azure. 
+- Uma conexão segura, chamada de túnel, que criptografa o tráfego enviado por ele. 
+- Uma rede local com um gateway gratuito que pode aceitar os dados criptografados.
