@@ -100,3 +100,20 @@ R: A alternativa sobre Azure Resource Groups está incorreta, pois é necessári
 - O Gateway de VPN deve ser anexado a uma Rede Virtual do Azure. 
 - Uma conexão segura, chamada de túnel, que criptografa o tráfego enviado por ele. 
 - Uma rede local com um gateway gratuito que pode aceitar os dados criptografados.
+
+> 28 - Qual dos seguintes serviços seria considerado Software-as-a-Service (SaaS)?
+- Office 365
+- Azure Active Directory
+
+> 29 - Você tenta criar vários discos gerenciados em seu ambiente do Azure. No Portal, você recebe uma mensagem informando que deve aumentar seus limites de assinatura do Azure. O que você deve fazer para aumentar os limites?
+- Crie uma nova solicitação de suporte.
+R: Quando é uma resposta de limite, ou seja, já houve uma tentativa, mas não obteve permissão, somente abrindo uma solicitação no suporte, por isso a alternativa de alterar a política está incorreta.
+
+> 30 - Uma empresa está planejando implantar um servidor web e um servidor de banco de dados em diferentes sub-redes. Você deve garantir que as restrições de tráfego estejam em vigor para que o servidor de banco de dados possa se comunicar apenas com o servidor da web. Qual das opções a seguir você recomendaria para implementar essas restrições?
+- NSGs (Networking Security Groups)
+R: NSGs são os grupos de segurança que permitem aplicar regras de firewall no recurso.
+
+> 31 - Você precisa definir uma solução que tenha como requisito principal fornecer uma maneira eficiente de distribuir conteúdo da Web para usuários em todo o mundo. Qual solução esse serviço deve usar?
+- Azure CDN
+R: Com Azure CDN, você possui múltiplas entradas e ela se encarrega do gerenciamento de cache e distribuição da informação, portanto é a alternativa correta. Load Balancer e Application Gateway são mais focados no gerenciamento da distribuição do conteúdo do que na distribuição em sí.
+
