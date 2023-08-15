@@ -117,3 +117,72 @@ R: NSGs são os grupos de segurança que permitem aplicar regras de firewall no 
 - Azure CDN
 R: Com Azure CDN, você possui múltiplas entradas e ela se encarrega do gerenciamento de cache e distribuição da informação, portanto é a alternativa correta. Load Balancer e Application Gateway são mais focados no gerenciamento da distribuição do conteúdo do que na distribuição em sí.
 
+> 32 - Uma empresa está planejando usar o Azure Cloud para hospedar recursos. Qual das opções a seguir é uma das principais vantagens de hospedar recursos na nuvem pública do Azure?
+- Alta disponibilidade - uma estrutura global e tolerante a falhas garante maior confiabilidade
+
+> 33 - Quais planos de suporte do Azure oferecem acesso 24 horas por dia, 7 dias por semana a engenheiros de suporte técnico?
+- Professional Direct
+- Standard
+
+> 34 - Se você tiver grandes quantidades de dados que precisam ser processados em paralelo em muitas máquinas, qual é o melhor serviço para usar no Azure?
+- Azure Data Lake Analytics
+R: Azure ScaleSets seria capaz de ampliar a capacidade, mas não necessariamente processar os dados, para essa função utilizamos o Azure Data Lake Analytics, portanto, a alternativa correta.
+
+> 35 - Você deseja iniciar na Inteligência Artificial no Azure usando um espaço de trabalho visual. Qual serviço você deve usar?
+- Azure Machine Learning Studio
+R: Azure Cognitive Service é uam ferramenta que contém diversos serviços de Inteligência Artificial (análise de imagem, texto etc), mas não é um espaço para desenvolvimento. Quem tem esse propósito é o Azure Machine Learning Studio.
+
+> 36 - Você precisa criar uma nova solução de IoT rapidamente com tempo mínimo de configuração e desenvolvimento. Qual produto ou solução do Azure pode ajudar melhor com esses requisitos?
+- Azure IoT Central
+R: Azure IoT Central permite a criação rápida de soluções de IoT.
+
+> 37 - Qual serviço do Azure você deve usar para correlacionar métricas e logs de vários recursos do Azure em um repositório centralizado?
+- Azure Monitor
+
+> 38 - Qual das seguintes soluções do Azure permite armazenar geograficamente em cache e distribuir conteúdo de alta largura de banda, como streaming de vídeos, para usuários em diferentes partes do mundo?
+- Content Delivery Networking (CDN)
+R: Cache, distribuição de conteúdo, distribuído globalmente, são termos associados a CDN
+
+> 39 - Defina "economia de escala".
+- A capacidade de fazer as coisas com mais eficiência ou a um custo menor por unidade ao operar em uma escala maior.
+
+> 40 - Você tem um aplicativo local que processa mensagens de fila SMSS (Simple Message Submission Service) recebidas e registra os dados em um arquivo de log. Você migra esse aplicativo para um aplicativo de funções do Azure. Que tipo de serviço de nuvem isso seria considerado?
+- Serverless
+R: O Azure Function app é um Serverless, ou seja, colocou o código e ele trabalha para você
+
+> 41 - Atualmente, você tem um datacenter local que consiste em 20 servidores Windows executando IIS e SQL Server. O gerenciamento de TI determinou que todos os sistemas deveriam ser movidos para o Azure no próximo ano. Eles também afirmam que apenas soluções de plataforma como serviço (PaaS) devem ser implementadas. Qual das opções a seguir atende a esses requisitos?
+- Azure App Service
+- Azure SQL Database
+R: Azure Virtual Machines é um IaaS, portanto, incorreta. Azure App Service serve como plataforma para fazer o deploy de aplicações web sem se preocupar com as máquinas, ou seja uma PaaS e alternativa correta. O Azure SQL também atenderia a necessidade do SQL e Banco de dados, o que torna essa outra alternativa também correta.
+
+> 42 - Você estenderá seu datacenter local para o Azure. Você criou uma nova assinatura do Azure e um grupo de recursos chamado Office-Cloud. Você implanta duas máquinas virtuais no Office-Cloud com a intenção de promovê-las a controladores de domínio do Active Directory. Que tipo de serviço de nuvem você deve usar?
+- Infrastructure-as-a-Service
+R: criação de máquinas virtuais estarão normalmente ligada a IaaS
+
+> 43 - Quais das opções a seguir são características de nuvens públicas?
+- Alta escalabilidade
+- Custos mais baixos
+
+> 44 - Defina o conceito de "elasticidade dinâmica".
+- Um serviço de nuvem que responde rapidamente quando a demanda aumenta e diminui quando a demanda diminui.
+
+> 45 - Para qualquer máquina virtual de instância única usando SSD premium ou Ultra Disk para todos os discos do sistema operacional e discos de dados, qual é a garantia do SLA para conectividade da máquina virtual?
+- 99,90%
+R: CosmosDB, firewall tem 99,99% de SLA, mas o seriço da questão é de 99,90%
+
+> 46 - Uma empresa deseja começar a usar o Azure. Eles querem usar zonas de disponibilidade no Azure. Qual das opções a seguir está associada ao conceito de zonas de disponibilidade no Azure?
+- Falha do Data Center
+
+> 47 - Sua empresa está planejando criar recursos para diferentes departamentos no Azure. Eles querem ter certeza do que será gasto por cada departamento. Qual das opções a seguir você deve considerar implementar para esse requisito?
+- Azure tags
+R: Com Azure tags será possível marcar por departamento e em seguida será possível criar filtros para obter os custos por departamento. Azure locks é utilizado para evitar a exclusão de recursos, portanto, não atende. Azure Monitor para pegar métricas, logs do que está acontecendo no ambiente, também não atende. Azure Adivsor é um assistente e também não atende.
+
+> 48 - Você está planejando configurar uma conta gratuita do Azure. Qual das opções a seguir não está correta quando se trata do que é oferecido como parte da conta gratuita do Azure?
+- Acesso gratuito aos produtos mais populares do Azure após o período de expiração de 12 meses
+
+> 49 - Qual é o nome do contêiner lógico usado para agrupar e gerenciar recursos no Azure?
+- Resource Groups
+
+> 50 - Qual dos seguintes tipos de armazenamento do Azure é mais adequado para compartilhar arquivos usando o protocolo SMB (Server Message Block)?
+- Azure Files
+R: Blob Storage não é um SMB, é apenas um repositório para inserir objetos. É necessário um compartilhamento e por isso que a alternativa é o Azure Files
